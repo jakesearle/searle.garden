@@ -15,21 +15,6 @@ git submodule init
 git submodule update
 ```
 
-Install the theme:
+## Updating the Theme
 
-```
-hugo mod get
-```
-
-Initialize the NPM `package.json` and install the dependencies:
-
-```
-hugo mod npm pack
-npm install
-```
-
-## Theme
-
-This site uses the hugo [gruvbox](https://themes.gohugo.io/themes/hugo-theme-gruvbox/) theme.
-
-The theme can also be [updated](https://themes.gohugo.io/themes/hugo-theme-gruvbox/#update-the-theme).
+git submodule update --remote --rebase
