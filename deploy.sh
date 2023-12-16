@@ -3,9 +3,10 @@ set -e
 
 # First commit and push everything that's here
 if [[ `git status --porcelain` ]]; then
-    echo "Please commit your changes"
-    exit 1
+    git add .
+    git commit -m "Deployment"
 fi
+git push
 
 LOGIN=dk@dk
 DIR_NAME=/var/www/searle.garden/
