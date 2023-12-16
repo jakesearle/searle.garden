@@ -4,7 +4,7 @@ set -e
 # First commit and push everything that's here
 if [[ `git status --porcelain` ]]; then
     git add .
-    git commit -m "Deployment"
+    git commit -m "Automated deploy"
 fi
 git push
 
