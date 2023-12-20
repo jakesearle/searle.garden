@@ -2,3 +2,7 @@ baseURL: 'https://searle.garden/'
 languageCode: 'en-us'
 title: 'Searle Digital Garden'
 theme: 'hugo-flex'
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
