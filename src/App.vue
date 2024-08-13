@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Butt.js App"/>
+  <HelloWorld msg="Welcome to Your Butt.js App2"/>
 </template>
 
 <script>
