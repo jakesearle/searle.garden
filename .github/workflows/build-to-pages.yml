@@ -6,20 +6,17 @@ on:
       - main
 
 jobs:
-  run-script:
+  gh-pages-deploy:
+    name: Deploying to Github Pages
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: '20'
-          
-      - name: Install NPM dependencies
-        run: npm install
-      
-      - name: Run custom script
-        run: ./scripts/deploy.sh
+          node-version: "20"
+      - name: Install packages
+        run: npm i
+      - name: Set Creds
+        run: git config user.name "jakesearle" && git config user.email "jacobbsearle@gmail.com"
+      - name: Deploy
+        run: npm run deploy
