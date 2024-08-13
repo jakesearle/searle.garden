@@ -1,4 +1,4 @@
-name: Run Script on Push to Main
+name: push to main deploy github pages
 
 on:
   push:
